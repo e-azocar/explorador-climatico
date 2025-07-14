@@ -16,31 +16,24 @@ El proyecto consiste en una aplicación interactiva que permite a los usuarios e
 
 ## Requisitos
 
-- Python 3.8 o superior (se recomienda Python 3.15)
+- Python 3.8 o superior
+- Pyenv (Optional, para gestionar versiones de Python)
 - Archivo CSV con datos climáticos (ejemplo: `archivoTemperaturas.csv`)
 
 ## Instalación y uso
 
-1. Crear un entorno virtual:
-   ```bash
-   python -m venv venv
-   ```
-2. Activar el entorno virtual:
-   - En Windows:
-     ```bash
-     .\.venv\Scripts\activate
-     ```
-   - En macOS/Linux:
-     ```bash
-     source .venv/bin/activate
-     ```
-3. Instalar las bibliotecas necesarias:
-   ```bash
-   pip install -r requirements.txt
-   ```
+1. Crear un entorno con la versión adecuada de Python usando pyenv:
+    ```bash
+    pyenv install 3.13.0
+    pyenv local 3.13.0
+    ```
 
+2. Instalar las bibliotecas necesarias:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-4. Ejecutar el script principal:
+3. Ejecutar el script principal:
    ```bash
    python main.py
    ```
