@@ -33,7 +33,12 @@ El proyecto consiste en una aplicación interactiva que permite a los usuarios e
     pip install -r requirements.txt
     ```
 
-3. Ejecutar el script principal:
+3. Activar `streamlit`:
+    ```bash
+    streamlit activate
+    ```
+
+4. Ejecutar el script principal:
    ```bash
    python main.py
    ```
