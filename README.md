@@ -16,29 +16,36 @@ El proyecto consiste en una aplicación interactiva que permite a los usuarios e
 
 ## Requisitos
 
-- Python 3.8 o superior
+- Python 3.9 o superior
 - Pyenv (Optional, para gestionar versiones de Python)
 - Archivo CSV con datos climáticos (ejemplo: `archivoTemperaturas.csv`)
 
 ## Instalación y uso
 
 1. Crear un entorno con la versión adecuada de Python usando pyenv:
+
     ```bash
-    pyenv install 3.13.0
-    pyenv local 3.13.0
+    pyenv install -l # Para listar las versiones disponibles y elegir una adecuada para el proyecto
+    pyenv install 3.10.0 # Instalar una versión específica de Python (se recomienda 3.10.0)
+    pyenv local 3.10.0
+    ```
+2. Usar el entorno virtual:
+    ```bash
+    pyenv shell 3.10.0
     ```
 
-2. Instalar las bibliotecas necesarias:
+3. Instalar las bibliotecas necesarias:
     ```bash
     pip install -r requirements.txt
     ```
 
-3. Activar `streamlit`:
+4. Activar `streamlit`:
     ```bash
     streamlit activate
     ```
+    Este paso solo es necesario la primera vez que se ejecuta el proyecto para configurar `streamlit`. Es importante, pues evita que durante la ejecución del proyecto `streamlit` solicite ingresar alguna información adicional.
 
-4. Ejecutar el script principal:
+5. Ejecutar el script principal:
    ```bash
    python main.py
    ```
@@ -56,10 +63,11 @@ El proyecto consiste en una aplicación interactiva que permite a los usuarios e
 
 ```
 proyecto-intro/
-├── main.py                   (Script principal que ejecuta la aplicación)
-├── gui.py                    (Interfaz gráfica de usuario)
-├── requirements.txt          (Lista de dependencias del proyecto)
+├── .python-version           (Archivo para definir la versión de Python)
 ├── archivoTemperaturas.csv   (Archivo CSV con datos climáticos)
+├── gui.py                    (Interfaz gráfica de usuario)
+├── main.py                   (Script principal que ejecuta la aplicación)
 ├── README.md                 (Documentación del proyecto)
-└── README.pdf                (Documentación en PDF del proyecto)
+├── README.pdf                (Documentación en PDF del proyecto)
+└── requirements.txt          (Lista de dependencias del proyecto)
 ```
